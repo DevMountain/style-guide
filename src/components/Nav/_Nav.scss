@@ -2,18 +2,20 @@
   position: fixed;
   bottom: 25px;
   left: 25px;
+  z-index: 2;
   .icon-container {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px rgba(0,0,0,.5) solid;
+    border: 1px rgba(0,0,0,.7) solid;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgba(0,0,0, .3);
     cursor: pointer;
     .line {
-      background-color: rgba(0,0,0,.5);
+      background-color: rgba(0,0,0,.7);
       width: 25px;
       height: 4px;
       border-radius: 3px;
