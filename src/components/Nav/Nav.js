@@ -4,58 +4,87 @@ import arrow from './back-arrow.png'
 
 export default class Nav extends Component {
   state = {
-    showMenu: false
+    showMenu: false,
+    active1: false,
+    active2: false,
+    active3: false,
+    active4: false,
+    expanded: true
   }
 
   toggleMenu = () => this.setState({ showMenu: !this.state.showMenu })
 
+  expand = () => {
+    this.setState({
+      expanded: !this.state.expanded
+    })
+  }
+
   render() {
-    const { showMenu } = this.state;
+    const { expanded } = this.state;
     return (
       <div className='nav-container'>
-        <section
-          className='icon-container'
-          onClick={this.toggleMenu}
-        >
-          <div className='line'></div>
-          <div className='line'></div>
-          <div className='line'></div>
-        </section>
-        <section
-          className={showMenu ? 'menu-container menu-slide' : 'menu-container'}
-        >
-          <img src={arrow} className='arrow' onClick={this.toggleMenu} />
-          <p onClick={this.toggleMenu}>
-            <Link to='/'>Home</Link>
-          </p>
-          <p onClick={this.toggleMenu}>
-            <Link to='color-theme'>Color Theme</Link>
-          </p>
-          <p onClick={this.toggleMenu}>
-            <Link to='fonts'>Fonts</Link>
-          </p>
-          <p onClick={this.toggleMenu}>
-            <Link to='images'>Images</Link>
-          </p>
-          <p onClick={this.toggleMenu}>
-            <Link to='text-over-images'>Text Over Images</Link>
-          </p>
-          <p onClick={this.toggleMenu}>
-            <Link to='spacing-layout'>Spacing and Layout</Link>
-          </p>
-        </section>
-      </div >
+        <div className="parent2">
+          <div className="test1" style={expanded ? {
+            'backgroundColor': 'gray',
+            'transform': 'translate(125px,0px)'
+          } : null
+          }>
+            <i className="fas fa-cogs fa-2x"></i>
+          </div>
+          <div className="test2" style={expanded ? {
+            'backgroundColor': 'gray',
+            'transform': 'translate(105px,-60px)'
+          } : null
+          }>
+            <i className="far fa-object-ungroup fa-2x"></i>
+          </div>
+          <div className="test3" style={expanded ? {
+            'backgroundColor': 'gray',
+            'transform': 'translate(60px,-105px)'
+          } : null
+          }>
+            <i className="fas fa-images fa-2x"></i>
+          </div>
+          <div className="test4" style={expanded ? {
+            'backgroundColor': 'gray',
+            'transform': 'translate(0px,-125px)'
+          } : null
+          }>
+            <i className="fas fa-home fa-2x"></i>
+          </div>
+          <div className="test5" style={expanded ? {
+            'backgroundColor': 'gray',
+            'transform': 'translate(0px,-70px)'
+          } : null
+          }>
+            <i className="fas fa-layer-group" style={{ fontSize: '24px' }}></i>
+          </div>
+          <div className="test6" style={expanded ? {
+            'backgroundColor': 'gray',
+            'transform': 'translate(46px,-46px)'
+          } : null
+          }>
+            <i className="fas fa-palette" style={{ fontSize: '24px' }}></i>
+          </div>
+          <div className="test7" style={expanded ? {
+            'backgroundColor': 'gray',
+            'transform': 'translate(70px,0px)'
+          } : null
+          }>
+            <i className="fas fa-font" style={{ fontSize: '24px' }}></i>
+          </div>
+          <div className="mask2" onClick={this.expand}>
+            {
+              this.state.expanded ? (
+                <i className="fas fa-compress fa-3x"></i>
+              ) : (
+                  <i className="fas fa-expand-arrows-alt fa-3x"></i>
+                )
+            }
+          </div>
+        </div>
+      </div>
     )
   }
 }
-
-
-
-{/* <div>
-<Link to='/'>Home</Link>
-<Link to='color-theme'>Color Theme</Link>
-<Link to='fonts'>Fonts</Link>
-<Link to='images'>Images</Link>
-<Link to='text-over-images'>Text Over Images</Link>
-<Link to='spacing-layout'>Spacing and Layout</Link>
-</div> */}
