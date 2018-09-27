@@ -4,12 +4,7 @@ import arrow from './back-arrow.png'
 
 export default class Nav extends Component {
   state = {
-    showMenu: false,
-    active1: false,
-    active2: false,
-    active3: false,
-    active4: false,
-    expanded: true
+    expanded: false
   }
 
   toggleMenu = () => this.setState({ showMenu: !this.state.showMenu })
@@ -22,7 +17,6 @@ export default class Nav extends Component {
 
   changeRoute = (path) => {
     this.setState({ expanded: !this.state.expanded });
-    console.log(this.props)
     window.location.hash = `#/${path}`
   }
 
