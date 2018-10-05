@@ -22,6 +22,7 @@ export default class Nav extends Component {
 
   render() {
     const { expanded } = this.state;
+    if (window.location.hash === '#/') return null;
     return (
       <div className='nav-container'>
         <div className="parent2">

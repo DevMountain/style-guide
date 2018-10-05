@@ -60,7 +60,7 @@ export default class ColorTheme extends Component {
   render() {
     const { backgroundColor, secondaryColor, primaryFont, secondaryFont, accent } = this.state.colorTheme;
     return (
-      <div>
+      <div id='color-theme-wrapper'>
         <div className={this.state.showColorPicker ? 'panel' : 'panel panel-close'}>
           <Panel update={this.updateColors} showColorPicker={this.state.showColorPicker} togglePanel={this.togglePanel} />
 
