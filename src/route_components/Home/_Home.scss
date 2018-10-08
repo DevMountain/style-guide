@@ -33,6 +33,11 @@
 // 	line-height: 1;
 // }
 
+#dm_logo {
+	width: 100px;
+	margin-bottom: 20px;
+}
+
 #home-page-wrapper {
 
 ol, ul {
@@ -1889,10 +1894,11 @@ input, select, textarea {
 		position: relative;
 		background: #fff;
 		text-align: center;
+		border-bottom: solid 5px #5aa4ce;
 	}
 
 		#header > .container {
-			padding: 14em 0 7em 0;
+			padding: 8em 0 7em 0;
 			border-bottom: solid 2px #e5e5e5;
 			box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
 		}
@@ -1900,7 +1906,7 @@ input, select, textarea {
 		#header h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: #ed786a;
+			color: #5aa4ce;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
@@ -2258,7 +2264,7 @@ input, select, textarea {
 		/* Header */
 
 			#header > .container {
-				padding: 12em 0 5em 0;
+				padding: 6em 0 5em 0;
 			}
 
 			#header h1 {
@@ -2329,7 +2335,7 @@ input, select, textarea {
 		/* Header */
 
 			#header > .container {
-				padding: 10em 0 7em 0;
+				padding: 4em 0 7em 0;
 			}
 
 		/* Nav */

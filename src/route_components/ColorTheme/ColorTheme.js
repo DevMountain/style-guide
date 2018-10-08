@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Panel from './Panel';
+import Panel from './../../components/Panel/Panel';
 
 export default class ColorTheme extends Component {
 
