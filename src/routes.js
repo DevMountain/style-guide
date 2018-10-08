@@ -6,7 +6,7 @@ import Images from './route_components/Images/Images';
 import Fonts from './route_components/Fonts/Fonts';
 import ColorTheme from './route_components/ColorTheme/ColorTheme';
 import NotFound from './route_components/NotFound/NotFound';
-import Nav from './components/Nav/Nav';
+import Nav from './components/PushNav/PushNav';
 import SpacingAndLayout from './route_components/SpacingAndLayout/SpacingAndLayout';
 
 

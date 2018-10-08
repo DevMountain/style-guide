@@ -8,21 +8,21 @@ export default class Home extends Component {
         <section id="header">
           <div className="container">
 
-
-            <h1 id="logo"><a href="index.html">Student Style Guide</a></h1>
+            <img id='dm_logo' src="./images/dm_logo.jpg" alt="" />
+            <h1 id="logo">Student Style Guide</h1>
             <p>Guidelines and tips for creating a well designed personal project.</p>
 
 
             <nav id="nav">
               <ul>
-                <li><a className="icon fa-home" href="index.html"><span>Color Theme</span></a></li>
+                <li><a className="icon fa-paint-brush" ><span>Color Theme</span></a></li>
                 <li>
-                  <a href="#" className="icon fa-bar-chart-o"><span>Images</span></a>
+                  <a className="icon fa-picture-o"><span>Images</span></a>
                 </li>
-                <li><a className="icon fa-cog" href="left-sidebar.html"><span>Fonts</span></a></li>
-                <li><a className="icon fa-retweet" href="right-sidebar.html"><span>Spacing & Layout</span></a></li>
-                <li><a className="icon fa-sitemap" href="no-sidebar.html"><span>Text Over Images</span></a></li>
-                <li><a className="icon fa-sitemap" href="no-sidebar.html"><span>Generator</span></a></li>
+                <li><a className="icon fa-font" ><span>Fonts</span></a></li>
+                <li><a className="icon fa-retweet" ><span>Spacing & Layout</span></a></li>
+                <li><a className="icon fa-sitemap" ><span>Text Over Images</span></a></li>
+                <li><a className="icon fa-cogs" ><span>Generator</span></a></li>
               </ul>
             </nav>
 
@@ -40,13 +40,11 @@ export default class Home extends Component {
 
 
                 <section>
-                  <a href="#" className="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                  <a className="image featured"><img src="http://cdn.instantshift.com/media/uploads/2015/12/most-ugly-websites.jpg" alt="" /></a>
                   <header>
-                    <h3>Okay, so what is this?</h3>
+                    <h3>Too much going on?</h3>
                   </header>
-                  <p>This is <strong>Strongly Typed</strong>, a free, fully responsive site template
-										by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the
-										<a href="http://html5up.net/license">CCA 3.0 license</a>.</p>
+                  <p>Websites with tons of images, text, and other things going on will take a while to load, and they’ll confuse your visitors. Avoid busy designs like the plague.</p>
                 </section>
 
               </div>
@@ -54,13 +52,11 @@ export default class Home extends Component {
 
 
                 <section>
-                  <a href="#" className="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                  <a className="image featured"><img src="images/pic02.jpg" alt="" /></a>
                   <header>
-                    <h3>Nice! What is HTML5 UP?</h3>
+                    <h3>Hidden navigation...not cool!</h3>
                   </header>
-                  <p><a href="http://html5up.net">HTML5 UP</a> is a side project of <a href="http://twitter.com/ajlkn">AJ’s</a> (= me).
-                  I started it as a way to both test my responsive tools and sharpen up my coding
-										and design skills a bit.</p>
+                  <p>Making your navigation menu hard to find is one common web design mistake. Have you ever been to a website and you can’t find the menu or the search bar? It’s infuriating.</p>
                 </section>
 
               </div>
@@ -68,7 +64,7 @@ export default class Home extends Component {
 
 
                 <section>
-                  <a href="https://designforhackers.com/blog/comic-sans-hate/" className="image featured" target='_blank'><img src="./images/warning_comic_sans.png" alt="" /></a>
+                  <a className="image featured" target='_blank'><img src="./images/warning_comic_sans.png" alt="" /></a>
                   <header>
                     <h3>Should I use comic sans?</h3>
                   </header>
